@@ -522,19 +522,8 @@ body, div, span {
               justify-content:center;
       background: inherit;
     }
-    .demo .nav{
-      -webkit-box-pack:justify;
-      -webkit-justify-content:space-between;
-          -ms-flex-pack:justify;
-              justify-content:space-between;
-    }
-    .demo .nav a{
+    .nav a{
       padding:0 10px;
-    }
-    .demo2{
-      -webkit-align-self: center;
-          -ms-flex-item-align: center;
-              align-self: center;
     }
     .iphone-demo {
       -webkit-box-flex: 1;

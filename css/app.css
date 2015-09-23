@@ -68,14 +68,8 @@ body, div, span {
       justify-content:center;
       background: inherit;
     }
-    .demo .nav{
-      justify-content:space-between;
-    }
-    .demo .nav a{
+    .nav a{
       padding:0 10px;
-    }
-    .demo2{
-      align-self: center;
     }
     .iphone-demo {
       flex-grow: 1;
