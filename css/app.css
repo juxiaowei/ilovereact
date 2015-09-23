@@ -80,5 +80,5 @@
     .iphone-demo ,.feature-description{
       align-self:stretch;
       justify-content:center;
-      flex:1 1 0;
+      flex:1;
     }
