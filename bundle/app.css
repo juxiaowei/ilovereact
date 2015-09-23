@@ -489,9 +489,8 @@ body, div, span {
     .section {
       background-color: rgba(255,0,0,0.3);
       border-bottom: 2px solid #FFF;
-      height: 100vh;
+      height: 100%;
       width: 100vw;
-      color: #fff;
     }
     .section h1{
       font-size: 64px;
