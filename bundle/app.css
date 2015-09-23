@@ -526,18 +526,10 @@ body, div, span {
       padding:0 10px;
     }
     .iphone-demo {
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
       background-color: rgba(255,0,0,0.3);
     }
 
     .feature-description {
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
       background-color: rgba(0,255,0,0.3);
       -webkit-box-pack:center;
       -webkit-justify-content:center;
@@ -545,9 +537,6 @@ body, div, span {
               justify-content:center;
     }
     .iphone-demo ,.feature-description{
-      -webkit-flex-basis:0;
-          -ms-flex-preferred-size:0;
-              flex-basis:0;
       -webkit-align-self:stretch;
           -ms-flex-item-align:stretch;
               align-self:stretch;

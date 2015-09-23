@@ -72,17 +72,14 @@ body, div, span {
       padding:0 10px;
     }
     .iphone-demo {
-      flex-grow: 1;
       background-color: rgba(255,0,0,0.3);
     }
 
     .feature-description {
-      flex-grow: 1;
       background-color: rgba(0,255,0,0.3);
       justify-content:center;
     }
     .iphone-demo ,.feature-description{
-      flex-basis:0;
       align-self:stretch;
       flex-basis:50%;
     }
