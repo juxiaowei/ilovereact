@@ -549,14 +549,16 @@ body, div, span {
           -ms-flex-positive: 1;
               flex-grow: 1;
       background-color: rgba(0,255,0,0.3);
+      just-content:center;
     }
-    .demo3{
-      -webkit-flex-basis:50%;
-          -ms-flex-preferred-size:50%;
-              flex-basis:50%;
-    }
-    .demo3 .iphone-demo ,.demo3 .feature-description{
+    .iphone-demo ,.feature-description{
       -webkit-flex-basis:0;
           -ms-flex-preferred-size:0;
               flex-basis:0;
+      -webkit-align-self:stretch;
+          -ms-flex-item-align:stretch;
+              align-self:stretch;
+      -webkit-flex-basis:50%;
+          -ms-flex-preferred-size:50%;
+              flex-basis:50%;
     }

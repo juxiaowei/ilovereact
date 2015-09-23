@@ -84,10 +84,10 @@ body, div, span {
     .feature-description {
       flex-grow: 1;
       background-color: rgba(0,255,0,0.3);
+      just-content:center;
     }
-    .demo3{
-      flex-basis:50%;
-    }
-    .demo3 .iphone-demo ,.demo3 .feature-description{
+    .iphone-demo ,.feature-description{
       flex-basis:0;
+      align-self:stretch;
+      flex-basis:50%;
     }
