@@ -539,8 +539,8 @@ th {
       -webkit-justify-content:center;
           -ms-flex-pack:center;
               justify-content:center;
-      -webkit-box-flex:0;
-      -webkit-flex:0 0 50%;
-          -ms-flex:0 0 50%;
-              flex:0 0 50%;
+      -webkit-box-flex:1;
+      -webkit-flex:1 0 0;
+          -ms-flex:1 0 0;
+              flex:1 0 0;
     }
