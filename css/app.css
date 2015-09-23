@@ -16,3 +16,48 @@ body, div, span {
 body {
   background-color: rgba(255,0,0,0.3);
 }
+.section {
+      background-color: rgba(255,0,0,0.3);
+      border-bottom: 2px solid #FFF;
+      height: 100vh;
+      width: 100vw;
+      color: #fff;
+    }
+    .section h1{
+      font-size: 64px;
+        font-weight: 100;
+    }
+    .row{
+      flex-direction:row;
+    }
+    .column{
+      flex-direction:column;
+    }
+    .demo{
+      align-items:center;
+      justify-content:center;
+    }
+    .demo .nav{
+      justify-content:space-between;
+    }
+    .demo .nav a{
+      padding:0 10px;
+    }
+    .demo2{
+      align-self: center;
+    }
+    .iphone-demo {
+      flex-grow: 1;
+      background-color: rgba(255,0,0,0.3);
+    }
+
+    .feature-description {
+      flex-grow: 1;
+      background-color: rgba(0,255,0,0.3);
+    }
+    .demo3{
+      flex-basis:50%;
+    }
+    .demo3 .iphone-demo ,.demo3 .feature-description{
+      flex-basis:0;
+    }
