@@ -81,5 +81,5 @@ body, div, span {
     }
     .iphone-demo ,.feature-description{
       align-self:stretch;
-      flex-basis:50%;
+      flex:0 0 50%;
     }
