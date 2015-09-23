@@ -66,6 +66,7 @@ body, div, span {
     .demo{
       align-items:center;
       justify-content:center;
+      background: inherit;
     }
     .demo .nav{
       justify-content:space-between;

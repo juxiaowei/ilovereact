@@ -520,6 +520,7 @@ body, div, span {
       -webkit-justify-content:center;
           -ms-flex-pack:center;
               justify-content:center;
+      background: inherit;
     }
     .demo .nav{
       -webkit-box-pack:justify;
