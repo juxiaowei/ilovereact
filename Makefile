@@ -1,10 +1,9 @@
 # Makefile
-<<<<<<< HEAD
 .PHONY: server
 server:
   # WARNING: The indentation MUST be a tab. Spaces won't work.
-  browser-sync start --server --files=index.html
-=======
+	browser-sync start --server --files=index.html
+
 .PHONY: css
 css:
 	mkdir -p bundle
@@ -18,7 +17,3 @@ server:
 .PHONY: clean
 clean:
 	rm -r bundle
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
