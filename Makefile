@@ -18,4 +18,7 @@ server:
 .PHONY: clean
 clean:
 	rm -r bundle
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
