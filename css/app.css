@@ -84,7 +84,7 @@ body, div, span {
     .feature-description {
       flex-grow: 1;
       background-color: rgba(0,255,0,0.3);
-      just-content:center;
+      justify-content:center;
     }
     .iphone-demo ,.feature-description{
       flex-basis:0;

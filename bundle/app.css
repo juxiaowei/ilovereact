@@ -549,7 +549,10 @@ body, div, span {
           -ms-flex-positive: 1;
               flex-grow: 1;
       background-color: rgba(0,255,0,0.3);
-      just-content:center;
+      -webkit-box-pack:center;
+      -webkit-justify-content:center;
+          -ms-flex-pack:center;
+              justify-content:center;
     }
     .iphone-demo ,.feature-description{
       -webkit-flex-basis:0;
