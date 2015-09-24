@@ -547,10 +547,13 @@ th {
           -ms-flex:1;
               flex:1;
     }
-    .iphone-demo-img img:nth-child(2){
+    .iphone-demo img:nth-child(2){
       position: absolute;
-      top: 90px;
-      left: 25px;
+      left: 50%;
+      top: 50%;
+      -webkit-transform:translate(-50%,-50%);
+          -ms-transform:translate(-50%,-50%);
+              transform:translate(-50%,-50%);
     }
     #android-robot{
       position: absolute;
