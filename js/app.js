@@ -15,7 +15,7 @@ function animateLogo() {
 		css: {
 			y: "-20px",
 		}
-	}, {
+	},{
 		css: {
 			y: "20px",
 		},

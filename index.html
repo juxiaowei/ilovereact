@@ -20,6 +20,7 @@
 <body>
     <div class="section" id="intro-section">
         <div class="overlay"></div>
+        <div class="overlay-scroll"></div>
         <img class="react-logo" src="img/react-logo.svg"/>
         <h1>Build Native Apps With React</h1>
         <div class="nav row">
@@ -77,13 +78,12 @@
         <img id="android-robot" src="img/android-robot.svg"/>
     </div>
     <div id="slider-control">
-      <a href="#intro-section" >
+      <a href="#intro-section">
         <div class="dot"></div>
       </a>
       <a href="#native" >
         <div class="dot"></div>
       </a>
-
       <a href="#touch">
         <div class="dot"></div>
       </a>
@@ -93,6 +93,8 @@
       </a>
     </div>
     <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+    <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
