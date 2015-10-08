@@ -3,6 +3,7 @@ window.onload = function() {
   animateLogo();
   animateRobot();
   updateSliderControl();
+  addSmoothScrolling();
 };
 
 //
@@ -52,16 +53,25 @@ function updateSliderControl() {
 	}
 }
 
-function addSmoothScrolling() {
-	var links = document.querySelectorAll("#slider-control a");
+function scrollToElement(element) {
+  var topOfElement = element.offsetTop;
+  TweenMax.to(window,1,{
+    scrollTo: {
+      y: topOfElement,
+    },
+    ease: Power2.easeInOut,
+  });
+}
 
-	for (var i = 0; i < links.length; i++) {
-		var link = links[i];
-		
-		link.addEventListener("click", function(event) {
-			event.preventDefault();
-			var href = this.getAttribute("href");
-			scrollToElement(document.querySelector(href));
-		});
-	}
+function addSmoothScrolling() {
+  var links = document.querySelectorAll('#slider-control a');
+  for(var i = 0; i < links.length; i++) {
+  	!(function(i){
+    var link = links[_i];
+    link.addEventListener("click",function(event) {
+      var href = this.getAttribute('href');
+      scrollToElement(document.querySelector(href));
+    });
+	})(i)
+  }
 }

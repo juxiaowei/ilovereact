@@ -584,7 +584,7 @@ th {
       padding: 3px;
       position: fixed;
       top: 50%;
-      right: 0%;
+      right: 1%;
       -webkit-transform:translate(0,-50%);
           -ms-transform:translate(0,-50%);
               transform:translate(0,-50%);
