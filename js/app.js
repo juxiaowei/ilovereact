@@ -4,6 +4,7 @@ window.onload = function() {
   animateRobot();
   updateSliderControl();
   addSmoothScrolling();
+  addScrollMagic();
 };
 
 //
@@ -55,7 +56,7 @@ function updateSliderControl() {
 
 function scrollToElement(element) {
   var topOfElement = element.offsetTop;
-  TweenMax.to(window,1,{
+  TweenMax.to(window,.5,{
     scrollTo: {
       y: topOfElement,
     },
@@ -67,11 +68,37 @@ function addSmoothScrolling() {
   var links = document.querySelectorAll('#slider-control a');
   for(var i = 0; i < links.length; i++) {
   	!(function(i){
-    var link = links[_i];
+    var link = links[i];
     link.addEventListener("click",function(event) {
-      var href = this.getAttribute('href');
-      scrollToElement(document.querySelector(href));
+    	event.preventDefault();
+      	var href = link.getAttribute('href');
+      	scrollToElement(document.querySelector(href));
     });
 	})(i)
   }
+}
+function addScrollMagic() {
+	var controller = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({
+        triggerElement: "#native",
+        triggerHook: "onEnter",
+		duration: "100%"
+    }).setTween(".overlay-scroll", {
+        opacity: 1
+    }).addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#native",
+        triggerHook: "onEnter",
+        duration: "100%"
+    }).setTween(".iphone-demo", 1, { width: "50%", y: 0 })
+      .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#native",
+        triggerHook: "onLeave",
+        duration: "100%"
+    }).setPin(".iphone-demo")
+      .addTo(controller);
 }
